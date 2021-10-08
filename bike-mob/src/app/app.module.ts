@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BikemobNavbarComponent } from './bikemob-navbar/bikemob-navbar.component';
+import { BikemobHomeComponent } from './bikemob-home/bikemob-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BikemobNavbarComponent
+    BikemobNavbarComponent,
+    BikemobHomeComponent
   ],
   imports: [
     BrowserModule,
