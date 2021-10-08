@@ -1,8 +1,13 @@
 <div class="pos-f-t">
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-dark navbar-custom">
+    <button class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+      <ul class="list-group-horizontal navbar-nav ml-auto nav-flex-icons flex-row d-none d-md-flex">
+        <li class="list-group-item nav-item"><a href="home"> <span class="text-white h4"><i class="fa fa-bicycle" aria-hidden="true"></i> Home</span> </a></li>
+        <li class="list-group-item nav-item"><a href="events"> <span class="text-white h4"><i class="fa fa-calendar" aria-hidden="true"></i> Events</span> </a></li>
+        <li class="list-group-item nav-item"><a href="faqs"> <span class="text-white h4"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ</span> </a></li>
+      </ul>
     <ul class="navbar-nav ml-auto nav-flex-icons list-group-horizontal">
       <li class="nav-item">
         <a class="nav-link" href="https://www.facebook.com/groups/focobikemob" target="_blank">
@@ -16,10 +21,18 @@
       </li>
     </ul>
   </nav>
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h5 class="text-white h4">Collapsed content</h5>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
+  <div class="collapse d-md-none" id="navbarToggleExternalContent">
+    <div class=" navbar-custom p-4">
+      <a href="home">
+        <h5 class="text-white h4"><i class="fa fa-bicycle" aria-hidden="true"></i> Home</h5>
+      </a>
+      <a href="events">
+        <h5 class="text-white h4"><i class="fa fa-calendar" aria-hidden="true"></i> Events</h5>
+      </a>
+      <a href="faqs">
+        <h5 class="text-white h4"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ</h5>
+      </a>
     </div>
   </div>
 </div>
+<img class="img" src="assets/images/bike_mob_header.jpg" alt="Header Bike Mob Cruiser Group Ride Around Town">

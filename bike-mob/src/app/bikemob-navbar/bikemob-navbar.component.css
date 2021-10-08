@@ -1,0 +1,12 @@
+.list-group-item{
+    background-color: inherit;
+    border: none;
+}
+.navbar-custom{
+    /* background-color: #E7717D; */
+    background-image: linear-gradient(to right, #e7717d, #e9828c, #eb939b, #eba4aa, #ebb4b9);
+}
+.img{
+    width:100%;
+    height:auto;
+}

@@ -1,0 +1,9 @@
+.bm-footer{
+    background-image: linear-gradient(to right top, #450b72, #641a80, #81298e, #9f3a9c, #bc4ba9);
+    bottom:0;
+    height:50px;
+    width:100%;
+    color:white;
+    display: flex;
+    align-items: center;
+}

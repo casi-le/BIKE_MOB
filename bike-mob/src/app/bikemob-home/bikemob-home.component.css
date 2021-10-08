@@ -1,0 +1,10 @@
+.home{
+    width:100%;
+    flex: 1 1 auto;
+    background-image: linear-gradient(to right top, #e7717d, #e9828c, #eb939b, #eba4aa, #ebb4b9);
+    color:white;
+}
+:host{
+    display:flex;
+    width:100%;
+}
