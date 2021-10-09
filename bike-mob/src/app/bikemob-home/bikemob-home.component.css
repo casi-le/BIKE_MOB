@@ -9,3 +9,10 @@
     display:flex;
     width:100%;
 }
+.fa-stack .fa{
+    color: #eb939b;
+}
+.fa-stack .fa.fa-bicycle{
+    color:white;
+    z-index: 100;
+}
