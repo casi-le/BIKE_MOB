@@ -12,7 +12,8 @@
 }
 .navbar-custom{
     /* background-color: #E7717D; */
-    background-image: linear-gradient(to right, #e7717d, #e9828c, #eb939b, #eba4aa, #ebb4b9);
+    /* background-image: linear-gradient(to right, #e7717d, #e9828c, #eb939b, #eba4aa, #ebb4b9); */
+    background-image: linear-gradient(to right, #e9828c, #e9838d, #e9838d, #e9848e, #e9848e, #e98791, #ea8a93, #ea8d96, #ea939b, #eb99a0, #eb9ea5, #eba4aa);
 }
 .img{
     width:100%;

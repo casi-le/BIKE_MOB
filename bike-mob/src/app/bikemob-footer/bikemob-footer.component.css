@@ -1,6 +1,6 @@
 .bm-footer{
-    background-color: #641a80;
-    /* background-image: linear-gradient(to right top, #450b72, #641a80, #81298e, #9f3a9c, #bc4ba9); */
+  background-image: linear-gradient(to bottom, #e9828c, #e9838d, #e9838d, #e9848e, #e9848e, #e98791, #ea8a93, #ea8d96, #ea939b, #eb99a0, #eb9ea5, #eba4aa);
+   /* background-image: linear-gradient(to right top, #450b72, #641a80, #81298e, #9f3a9c, #bc4ba9); */
     bottom:0;
     height:50px;
     width:100%;
