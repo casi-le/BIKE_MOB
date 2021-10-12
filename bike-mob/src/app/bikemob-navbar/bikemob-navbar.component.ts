@@ -12,7 +12,7 @@ export class BikemobNavbarComponent implements OnInit {
   @HostListener('window:scroll', ['$event']) onScrollEvent($event: any){
     // console.log($event);
     // console.log("scrolling");
-    console.log(this.navbar);
+    // console.log(this.navbar);
     if(window.pageYOffset>=this.sticky){
       this.navbar?.classList.add('sticky');
     }else{
