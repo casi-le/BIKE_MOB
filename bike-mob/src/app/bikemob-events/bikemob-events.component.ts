@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { HttpClient, HttpHeaders} from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-bikemob-events',
@@ -7,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BikemobEventsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    
   }
 
 }

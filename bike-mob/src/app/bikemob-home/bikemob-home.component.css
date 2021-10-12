@@ -16,3 +16,9 @@
     color:white;
     z-index: 100;
 }
+h3{
+    color:#FF69B4;
+}
+h3 span{
+    font-size: larger;
+}
