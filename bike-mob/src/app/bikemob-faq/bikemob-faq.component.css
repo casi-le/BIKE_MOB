@@ -1,0 +1,16 @@
+.accordion{
+    margin: 1em 3em 1em 3em;
+    width: 100%;
+}
+:host {     
+    width: 90%;
+}
+h2:hover button{
+    color:#FF69B4;
+}
+i{
+    color: #FF69B4;
+}
+a{
+    color:#FF69B4;
+}
