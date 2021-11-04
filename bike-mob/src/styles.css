@@ -8,3 +8,9 @@ body{
   .box .row.content {
     flex: 0 1 auto;
   }
+  i{
+    color: #FF69B4;
+}
+a{
+    color:#FF69B4;
+}
