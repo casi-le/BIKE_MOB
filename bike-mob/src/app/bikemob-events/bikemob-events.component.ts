@@ -15,5 +15,4 @@ export class BikemobEventsComponent implements OnInit {
   ngOnInit(): void {
     
   }
-
 }
