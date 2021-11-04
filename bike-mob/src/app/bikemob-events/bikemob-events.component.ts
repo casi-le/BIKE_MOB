@@ -13,6 +13,5 @@ export class BikemobEventsComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    
   }
 }
