@@ -20,6 +20,7 @@ const routes: Routes = [
     onSameUrlNavigation: 'ignore', 
     scrollOffset: [0, 150],
     scrollPositionRestoration: 'top'
+    // text
   })],
   exports: [RouterModule]
 })
