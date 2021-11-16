@@ -2,17 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BikemobEventsComponent } from './bikemob-events/bikemob-events.component';
 import { BikemobFaqComponent } from './bikemob-faq/bikemob-faq.component';
-import { BikemobFooterComponent } from './bikemob-footer/bikemob-footer.component';
 import { BikemobHomeComponent } from './bikemob-home/bikemob-home.component';
-import { EventListComponent } from './event-list/event-list.component';
 
 const routes: Routes = [
   //todo add 404 page
   {path: 'home', component: BikemobHomeComponent},
   {path: 'events', component: BikemobEventsComponent},
   {path: 'faqs', component: BikemobFaqComponent},
-  {path: 'eventlist', component: EventListComponent},
-  // {path : '**', component: BikemobHomeComponent}
+  {path : '**', component: BikemobHomeComponent}
 ];
 
 @NgModule({
