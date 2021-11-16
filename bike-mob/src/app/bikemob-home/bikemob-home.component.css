@@ -22,3 +22,19 @@ h3{
 h3 span{
     font-size: larger;
 }
+img{
+    width:50%;
+    float: left;
+    margin-right: 10px;
+    clear:both;
+}
+h5{
+    color: #FF69B4;
+}
+li:before{
+    content: "\f12a";
+    color: #FF69B4;
+    font-family: FontAwesome;
+  display: inline-block;
+  padding-right:1em;
+}

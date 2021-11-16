@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -9,6 +9,8 @@ import { BikemobHomeComponent } from './bikemob-home/bikemob-home.component';
 import { BikemobFooterComponent } from './bikemob-footer/bikemob-footer.component';
 import { BikemobEventsComponent } from './bikemob-events/bikemob-events.component';
 import { BikemobFaqComponent } from './bikemob-faq/bikemob-faq.component';
+import { GalleryComponent } from './gallery/gallery.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { BikemobFaqComponent } from './bikemob-faq/bikemob-faq.component';
     BikemobHomeComponent,
     BikemobFooterComponent,
     BikemobEventsComponent,
-    BikemobFaqComponent
+    BikemobFaqComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import { BikemobFaqComponent } from './bikemob-faq/bikemob-faq.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }
