@@ -32,9 +32,6 @@ h5{
     color: #FF69B4;
 }
 li:before{
-    content: "\f12a";
-    color: #FF69B4;
-    font-family: FontAwesome;
-  display: inline-block;
-  padding-right:1em;
+    content: "";
+
 }

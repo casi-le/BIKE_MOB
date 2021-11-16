@@ -1,0 +1,7 @@
+img{
+    object-fit: cover;
+    color: pink;
+}
+::ng-deep img{
+    object-fit: cover;
+}

@@ -7,3 +7,12 @@ a:hover{
 .riderInfo{
     padding: 1em 3em 1em 3em;
 }
+li{
+    border:none;
+}
+h5 i{
+    color: #FF69B4;
+}
+li h5 i{
+    color:black;
+}
