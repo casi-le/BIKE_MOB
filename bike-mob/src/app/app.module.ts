@@ -11,6 +11,7 @@ import { BikemobFooterComponent } from './bikemob-footer/bikemob-footer.componen
 import { BikemobEventsComponent } from './bikemob-events/bikemob-events.component';
 import { BikemobFaqComponent } from './bikemob-faq/bikemob-faq.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { EventListComponent } from './event-list/event-list.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     BikemobFooterComponent,
     BikemobEventsComponent,
     BikemobFaqComponent,
-    GalleryComponent
+    GalleryComponent,
+    EventListComponent
   ],
   imports: [
     BrowserModule,
