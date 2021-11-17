@@ -27,6 +27,7 @@ img{
     float: left;
     margin-right: 10px;
     clear:both;
+    max-width: 600px;
 }
 h5{
     color: #FF69B4;
