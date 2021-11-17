@@ -5,3 +5,14 @@ img{
 ::ng-deep img{
     object-fit: cover;
 }
+.mobileWidth{
+    display:none;
+}
+@media only screen and (max-width: 800px) {
+    .mobileWidth{
+        display:block;
+    }
+    .fullWidth{
+        display: none;
+    }
+}

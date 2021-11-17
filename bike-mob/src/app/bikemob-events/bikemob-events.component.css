@@ -6,6 +6,7 @@ a:hover{
 }
 .riderInfo{
     padding: 1em 3em 1em 3em;
+    width:100vw;
 }
 li{
     border:none;
@@ -15,4 +16,13 @@ h5 i{
 }
 li h5 i{
     color:black;
+}
+@media only screen and (max-width: 800px) {
+.list-group-horizontal{
+    flex-direction: column;
+}
+iframe{
+    width:85vw;
+}
+
 }
