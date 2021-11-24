@@ -9,9 +9,6 @@ full-calendar{
 .fullWidth{
     width:100vw;
 }
-.fc-button{
-    background-color:#e9828c !important;
-}
 @media only screen and (max-width: 800px) {
     full-calendar{
         min-width:200px;

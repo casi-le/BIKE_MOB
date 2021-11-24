@@ -5,6 +5,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
+import timeGridPlugin from '@fullcalendar/timegrid';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +19,8 @@ import { BikemobInfoComponent } from './bikemob-info/bikemob-info.component';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
-  googleCalendarPlugin
+  googleCalendarPlugin,
+  timeGridPlugin
 ]);
 
 @NgModule({

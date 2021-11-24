@@ -23,6 +23,7 @@
     "@fullcalendar/angular": "^5.10.1",
     "@fullcalendar/daygrid": "^5.10.1",
     "@fullcalendar/google-calendar": "^5.10.1",
+    "@fullcalendar/timegrid": "^5.10.1",
     "bootstrap": "^4.6.0",
     "google-calendar": "^1.3.2",
     "jquery": "^3.6.0",
