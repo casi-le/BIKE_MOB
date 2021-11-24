@@ -1,12 +1,16 @@
 full-calendar{
     min-width:800px;
+    max-width: 1000px;
 }
 .calendar{
     margin: 1em 2em 1em 2em;
-    padding: 1em 2em 1em 2em;
+    padding:0;
 }
 .fullWidth{
     width:100vw;
+}
+.fc-button{
+    background-color:#e9828c !important;
 }
 @media only screen and (max-width: 800px) {
     full-calendar{
