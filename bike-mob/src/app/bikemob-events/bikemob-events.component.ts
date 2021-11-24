@@ -29,7 +29,13 @@ export class BikemobEventsComponent implements OnInit {
         googleCalendarId: 'focobikemob@gmail.com'
       },
       eventColor: '#FF69B4',
-      eventDisplay: 'block'
+      eventDisplay: 'block',
+      eventClick: function(info){
+        info.jsEvent.preventDefault(); // don't let the browser navigate
+        if (info.event.url) {
+          window.open(info.event.url, '_blank').focus();
+        }
+      }
     });
     calendar.render();
     
