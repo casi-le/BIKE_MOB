@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { Calendar, CalendarOptions } from '@fullcalendar/core';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
+import { DayGridView } from '@fullcalendar/daygrid';
 
 @Component({
   selector: 'app-bikemob-events',
@@ -10,10 +11,7 @@ import googleCalendarPlugin from '@fullcalendar/google-calendar';
 })
 export class BikemobEventsComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
-  calendarOptions: CalendarOptions = {
-    initialView: 'dayGridMonth'
-  };
+  constructor() { }
   calendarEl: any;
   ngOnInit(): void {
     this.googleCalSetUp();
@@ -21,6 +19,7 @@ export class BikemobEventsComponent implements OnInit {
   googleCalSetUp(){
     this.calendarEl = document.getElementById('calendar');
     let calendar = new Calendar(this.calendarEl, {
+      initialView: 'dayGridMonth',
       plugins: [ googleCalendarPlugin ],
       googleCalendarApiKey: 'AIzaSyC2ZSubbhIc3zuaJl9qtG9IVQajGptb66A',
       events: {
@@ -28,5 +27,6 @@ export class BikemobEventsComponent implements OnInit {
       }
     });
     calendar.render();
+    console.log(calendar.getOption('aspectRatio'));
   }
 }

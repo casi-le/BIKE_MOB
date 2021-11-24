@@ -1,0 +1,19 @@
+full-calendar{
+    min-width:800px;
+}
+.calendar{
+    margin: 1em 2em 1em 2em;
+    padding: 1em 2em 1em 2em;
+}
+.fullWidth{
+    width:100vw;
+}
+@media only screen and (max-width: 800px) {
+    full-calendar{
+        min-width:200px;
+    }
+    .calendar{
+        margin: .5em 1em .5em 1em;
+        padding: 0;
+    }
+}
