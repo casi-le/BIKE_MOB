@@ -1,0 +1,28 @@
+a:hover{
+    color: #FF69B4;
+}
+.routeAdjust{
+    top: -300px;
+}
+.riderInfo{
+    padding: 1em 3em 1em 3em;
+    width:100vw;
+}
+li{
+    border:none;
+}
+h5 i{
+    color: #FF69B4;
+}
+li h5 i{
+    color:black;
+}
+/* mobile settings */
+@media only screen and (max-width: 800px) {
+.list-group-horizontal{
+    flex-direction: column;
+}
+iframe{
+    width:85vw;
+}
+}

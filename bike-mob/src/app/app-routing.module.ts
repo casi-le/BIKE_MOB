@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { BikemobEventsComponent } from './bikemob-events/bikemob-events.component';
 import { BikemobFaqComponent } from './bikemob-faq/bikemob-faq.component';
 import { BikemobHomeComponent } from './bikemob-home/bikemob-home.component';
+import { BikemobInfoComponent } from './bikemob-info/bikemob-info.component';
 
 const routes: Routes = [
   //todo add 404 page
   {path: 'home', component: BikemobHomeComponent},
   {path: 'events', component: BikemobEventsComponent},
   {path: 'faqs', component: BikemobFaqComponent},
+  {path: 'info', component:BikemobInfoComponent},
   {path : '**', component: BikemobHomeComponent}
 ];
 

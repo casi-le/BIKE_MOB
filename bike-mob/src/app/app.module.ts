@@ -2,6 +2,9 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
+import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +14,12 @@ import { BikemobFooterComponent } from './bikemob-footer/bikemob-footer.componen
 import { BikemobEventsComponent } from './bikemob-events/bikemob-events.component';
 import { BikemobFaqComponent } from './bikemob-faq/bikemob-faq.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { BikemobInfoComponent } from './bikemob-info/bikemob-info.component';
+
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin,
+  googleCalendarPlugin
+]);
 
 @NgModule({
   declarations: [
@@ -20,13 +29,15 @@ import { GalleryComponent } from './gallery/gallery.component';
     BikemobFooterComponent,
     BikemobEventsComponent,
     BikemobFaqComponent,
-    GalleryComponent
+    GalleryComponent,
+    BikemobInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    FullCalendarModule // register FullCalendar with you app
   ],
   providers: [],
   bootstrap: [AppComponent],
