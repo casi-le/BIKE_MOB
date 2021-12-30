@@ -9,6 +9,11 @@ full-calendar{
 .fullWidth{
     width:100vw;
 }
+@media only screen and (min-width: 1200px){
+    .calendar{
+    margin: 1em 2em 1em -10em;
+    }
+}
 @media only screen and (max-width: 800px) {
     full-calendar{
         min-width:200px;
