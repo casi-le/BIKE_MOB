@@ -16,6 +16,7 @@ import { BikemobEventsComponent } from './bikemob-events/bikemob-events.componen
 import { BikemobFaqComponent } from './bikemob-faq/bikemob-faq.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BikemobInfoComponent } from './bikemob-info/bikemob-info.component';
+import { SupportComponent } from './support/support.component';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -32,7 +33,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     BikemobEventsComponent,
     BikemobFaqComponent,
     GalleryComponent,
-    BikemobInfoComponent
+    BikemobInfoComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule,
