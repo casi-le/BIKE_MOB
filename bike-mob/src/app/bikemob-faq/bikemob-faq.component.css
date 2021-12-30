@@ -1,5 +1,5 @@
 .accordion{
-    margin: 1em 3em 1em 3em;
+    padding: 1em 5em 1em 10em;
     width: 100%;
 }
 :host {     
@@ -13,4 +13,10 @@ i{
 }
 a{
     color:#FF69B4;
+}
+/* mobile settings */
+@media only screen and (max-width: 800px) {
+    .accordion{
+        padding: 0.5em;
+    }   
 }

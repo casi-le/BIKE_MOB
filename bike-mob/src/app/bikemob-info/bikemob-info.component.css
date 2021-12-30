@@ -5,7 +5,7 @@ a:hover{
     top: -300px;
 }
 .riderInfo{
-    padding: 1em 3em 1em 3em;
+    padding: 1em 15em 1em 15em;
     width:100vw;
 }
 li{
@@ -24,5 +24,8 @@ li h5 i{
 }
 iframe{
     width:85vw;
+}
+.riderInfo{
+    padding: 1em;
 }
 }

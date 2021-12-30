@@ -3,7 +3,7 @@
     flex: 1 1 auto;
     /* background-image: linear-gradient(to right top, #e7717d, #e9828c, #eb939b, #eba4aa, #ebb4b9); */
     /* color:white; */
-    padding: 1em 3em 1em 3em;
+    padding: 1em 15em 1em 15em;
 }
 :host{
     display:flex;
@@ -35,4 +35,10 @@ h5{
 li:before{
     content: "";
 
+}
+/* mobile settings */
+@media only screen and (max-width: 800px) {
+    .home{
+        padding: 1em;
+    }   
 }
