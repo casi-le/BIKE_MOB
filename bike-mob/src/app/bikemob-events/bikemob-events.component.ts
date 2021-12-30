@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Calendar, CalendarOptions } from '@fullcalendar/core';
+import listPlugin from '@fullcalendar/list';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
 @Component({
@@ -11,7 +12,12 @@ export class BikemobEventsComponent implements OnInit {
   constructor() { }
   calendarEl: any;
   ngOnInit(): void {
+    const ua = navigator.userAgent;
+    if(/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)){
+      this.googleCalMobileSetup();
+    }else{
     this.googleCalSetUp();
+    }
   }
   googleCalSetUp(){
     this.calendarEl = document.getElementById('calendar');
@@ -25,7 +31,7 @@ export class BikemobEventsComponent implements OnInit {
           }
         }
       },
-      plugins: [ googleCalendarPlugin ],
+      plugins: [ googleCalendarPlugin],
       headerToolbar: {
         left: 'dayGridMonth,timeGridWeek,custom',
         center: 'title',
@@ -41,23 +47,39 @@ export class BikemobEventsComponent implements OnInit {
       eventClick: function(info){
         info.jsEvent.preventDefault(); // don't let the browser navigate 
         var eventUrl = info.event.url;
-        const ua = navigator.userAgent;
-        var mobile = false;
-        if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)){
-          mobile = true;
-        }
-       if(mobile==true){
+        if(eventUrl){
+          window.open(eventUrl, '_blank');
+         }
+      }
+    });
+    calendar.render();
+  }
+  googleCalMobileSetup(){
+    this.calendarEl = document.getElementById('calendar');
+    let calendar = new Calendar(this.calendarEl, {
+      initialView: 'dayGridMonth',
+      plugins: [ googleCalendarPlugin, listPlugin  ],
+      headerToolbar: {
+        left: 'dayGridMonth,listMonth',
+        center: 'title',
+        right: 'prev,next'
+      }, 
+      titleFormat: { year: 'numeric', month: 'short' },
+      googleCalendarApiKey: 'AIzaSyC2ZSubbhIc3zuaJl9qtG9IVQajGptb66A',
+      events: {
+        googleCalendarId: 'focobikemob@gmail.com'
+      },
+      eventColor: '#FF69B4',
+      eventDisplay: 'block',
+      eventClick: function(info){
+        info.jsEvent.preventDefault(); // don't let the browser navigate 
+        var eventUrl = info.event.url;
         if (eventUrl) {
           var index = eventUrl.indexOf('event');
           var endindex = 'event?eid='.length;
           var url = eventUrl.slice(0,index) + 'r/eventedit/copy/' + eventUrl.slice(index+ endindex, eventUrl.length)
           window.open(url, '_blank')?.focus();
         }
-       }else{
-         if(eventUrl){
-          window.open(eventUrl, '_blank');
-         }
-       }     
       }
     });
     calendar.render();
