@@ -14,8 +14,17 @@ li{
 h5 i{
     color: #FF69B4;
 }
+h6{
+    color:#FF69B4;
+}
 li h5 i{
     color:black;
+}
+.conduct{
+    color: #FF69B4;
+}
+.conductHeader{
+    font-size:1.15rem;
 }
 /* mobile settings */
 @media only screen and (max-width: 800px) {
