@@ -15,8 +15,10 @@ export class BikemobNavbarComponent implements OnInit {
     // console.log(this.navbar);
     if(window.pageYOffset>=this.sticky){
       this.navbar?.classList.add('sticky');
+      this.navbar.classList.add('colorChange')
     }else{
       this.navbar?.classList.remove('sticky');
+      this.navbar.classList.remove('colorChange');
     }
   } 
 
