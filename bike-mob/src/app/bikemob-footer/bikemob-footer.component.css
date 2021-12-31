@@ -20,19 +20,21 @@ h3, .col-sm{
   padding-bottom: 7.5px;
 }
 .footerLine{
-  color: #e9828c;
+  color: #FF69B4;
   margin-bottom:.15em;
   height: 2px;
-  background-color: #e9828c;
+  background-color: #FF69B4;
 }
 i{
   font-size:larger;
+  color:white;
 }
 .secondary a{
-  color:black;
+  color:white;
 }
 .secondary a:hover{
-  color: #e9828c;
+  color: #e9828c !important;
+  text-decoration: none;
 }
 .middleOpacity{
   opacity: 0.25;

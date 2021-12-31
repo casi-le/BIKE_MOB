@@ -3,7 +3,7 @@
     flex: 1 1 auto;
     /* background-image: linear-gradient(to right top, #e7717d, #e9828c, #eb939b, #eba4aa, #ebb4b9); */
     /* color:white; */
-    padding: 1em 15em 1em 15em;
+    padding: 3em 15em 1em 15em;
 }
 :host{
     display:flex;
@@ -16,11 +16,14 @@
     color:white;
     z-index: 100;
 }
-h3{
+h2{
     color:#FF69B4;
 }
 h3 span{
     font-size: larger;
+}
+h4{
+    padding-bottom:1.5em;
 }
 img{
     width:50%;
@@ -36,9 +39,69 @@ li:before{
     content: "";
 
 }
+/* image +intro background & settings */
+.backgroundGrey{
+    background-color:#EEEEEE;
+}
+.introImg{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.introImg p{
+    font-size:larger;
+}
+.introImgSub{
+   padding-bottom:15%;
+}
+/* listing of core principles settings */
+.hide{
+    /* display: none; */
+    transition: transform 500ms, opacity 400ms;
+    opacity: 0;
+    transform: translateX(-35%);
+    visibility: hidden;
+    position:absolute;
+}
+
+.individualHeader{
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.125);
+    border-style: solid;
+    border-width: .5px;
+    cursor:pointer;
+    min-height:3.5em;
+}
+.participation:hover>h5, .radical:hover>h5, .unhinged:hover>h5, .civic:hover>h5, .currentHeader>h5{
+    color:black;
+}
+ .participation:hover ~ #participationP, .radical:hover ~ #radicalP , .unhinged:hover ~ #unhingedP, .civic:hover ~ #civicP, .current{
+    /* display: inline; */
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+    position: static;
+}
+.answerRow{
+    height:10vh;
+}
 /* mobile settings */
 @media only screen and (max-width: 800px) {
     .home{
         padding: 1em;
     }   
+    .introImg{
+        display: inline-block;
+    }
+    .introImgSub{
+        padding-bottom:0;
+    }
+    .row{
+        display:inline-block;
+        width:300%;
+    }
+    .answerP{
+        width:80vw;
+    }
+    
 }
