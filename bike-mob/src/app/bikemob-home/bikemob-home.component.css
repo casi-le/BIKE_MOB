@@ -33,7 +33,7 @@ img{
     max-width: 600px;
 }
 h5{
-    color: #FF69B4;
+    color: #FF0099;
 }
 li:before{
     content: "";
@@ -41,8 +41,9 @@ li:before{
 }
 /* image +intro background & settings */
 .backgroundGrey{
-    background-color:#EEEEEE;
+    background-color:#c4c4c4;
 }
+
 .introImg{
     display:flex;
     justify-content: center;
@@ -73,7 +74,7 @@ li:before{
     min-height:3.5em;
 }
 .participation:hover>h5, .radical:hover>h5, .unhinged:hover>h5, .civic:hover>h5, .currentHeader>h5{
-    color:black;
+    color:#000;
 }
  .participation:hover ~ #participationP, .radical:hover ~ #radicalP , .unhinged:hover ~ #unhingedP, .civic:hover ~ #civicP, .current{
     /* display: inline; */
@@ -98,10 +99,12 @@ li:before{
     }
     .row{
         display:inline-block;
-        width:300%;
     }
     .answerP{
         width:80vw;
+    }
+    .individualHeader{
+        max-width:100%;
     }
     
 }
