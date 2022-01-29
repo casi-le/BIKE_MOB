@@ -10,15 +10,14 @@
     width:100%;
 }
 .fa-stack .fa{
-    color: #eb939b;
+    color: #FF69B4;
 }
 .fa-stack .fa.fa-bicycle{
     color:white;
     z-index: 100;
 }
-h2{
-    color:#FF69B4;
-}
+.glitter{color: #FF69B4;}
+p.glitter{    -webkit-text-stroke: 0.25px #FF0099;}
 h3 span{
     font-size: larger;
 }
@@ -26,14 +25,12 @@ h4{
     padding-bottom:1.5em;
 }
 img{
-    width:50%;
+    width:40%;
+    height: 40%;
     float: left;
     margin-right: 10px;
     clear:both;
     max-width: 600px;
-}
-h5{
-    color: #FF0099;
 }
 li:before{
     content: "";
@@ -46,14 +43,12 @@ li:before{
 
 .introImg{
     display:flex;
-    justify-content: center;
-    align-items: center; 
 }
 .introImg p{
     font-size:larger;
 }
 .introImgSub{
-   padding-bottom:15%;
+   padding-bottom:5%;
 }
 /* listing of core principles settings */
 .hide{
@@ -106,5 +101,8 @@ li:before{
     .individualHeader{
         max-width:100%;
     }
+    .introImgSub{
+        padding-bottom:10%;
+     }
     
 }
