@@ -81,6 +81,10 @@ li:before{
 .answerRow{
     height:10vh;
 }
+.divPrinc{
+    float: right;
+    width: 55%;
+}
 /* mobile settings */
 @media only screen and (max-width: 800px) {
     .home{
@@ -103,6 +107,14 @@ li:before{
     }
     .introImgSub{
         padding-bottom:10%;
+     }
+     .divPrinc{
+         float: none;
+         width: 100%;
+     }
+     .row>.img{
+         width: 100%;
+         height: 100%;
      }
     
 }
