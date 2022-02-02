@@ -13,7 +13,8 @@ const routes: Routes = [
   {path: 'faqs', component: BikemobFaqComponent},
   {path: 'info', component:BikemobInfoComponent},
   {path: 'support', component:SupportComponent},
-  // {path : '**', component: BikemobHomeComponent}
+  {path : '**', component: BikemobHomeComponent},
+  {path: '', component: BikemobHomeComponent}
 ];
 
 @NgModule({
