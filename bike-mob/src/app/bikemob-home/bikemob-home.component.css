@@ -24,7 +24,7 @@ h3 span{
 h4{
     padding-bottom:1.5em;
 }
-img{
+.img{
     width:40%;
     height: 40%;
     float: left;
@@ -40,7 +40,6 @@ li:before{
 .backgroundGrey{
     background-color:#c4c4c4;
 }
-
 .introImg{
     display:flex;
 }
@@ -53,23 +52,45 @@ li:before{
 /* listing of core principles settings */
 .hide{
     /* display: none; */
-    transition: transform 500ms, opacity 400ms;
+    transition: transform 1s, opacity 400ms;
     opacity: 0;
-    transform: translateX(-35%);
+    transform: translateX(-100%);
     visibility: hidden;
     position:absolute;
 }
-
+.row{
+    overflow:hidden;
+}
+.backgroundLights{
+    color: #fff;
+}
+.backgroundLights>h1{
+    color:#000;
+}
 .individualHeader{
-    border-radius: 4px;
-    border-color: rgba(0, 0, 0, 0.125);
-    border-style: solid;
-    border-width: .5px;
+    display: inline-block;
     cursor:pointer;
+    width: 25%;
     min-height:3.5em;
 }
+.backgroundText{
+    background: rgb(0,0,0);
+    border-radius: 15px 50px 30px;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(88,88,88,1) 65%, rgba(134,134,134,1) 100%);
+}
+.answerP{
+    padding: 0 10% 0 10%;
+}
+.limitHeight{
+    max-height: 25vh;
+}
+.divPrinc{
+    width: 100%;
+    padding: 10px 10px 0 15px;
+    text-align: center;
+}
 .participation:hover>h5, .radical:hover>h5, .unhinged:hover>h5, .civic:hover>h5, .currentHeader>h5{
-    color:#000;
+    color:#fff;
 }
  .participation:hover ~ #participationP, .radical:hover ~ #radicalP , .unhinged:hover ~ #unhingedP, .civic:hover ~ #civicP, .current{
     /* display: inline; */
@@ -77,13 +98,10 @@ li:before{
     transform: translateX(0);
     visibility: visible;
     position: static;
+    height: 380px;
 }
 .answerRow{
-    height:10vh;
-}
-.divPrinc{
-    float: right;
-    width: 55%;
+    height:5vh;
 }
 /* mobile settings */
 @media only screen and (max-width: 800px) {
@@ -103,7 +121,8 @@ li:before{
         width:80vw;
     }
     .individualHeader{
-        max-width:100%;
+        width: 100%;
+        display: block;
     }
     .introImgSub{
         padding-bottom:10%;
@@ -111,10 +130,15 @@ li:before{
      .divPrinc{
          float: none;
          width: 100%;
+         text-align: left;
      }
      .row>.img{
          width: 100%;
          height: 100%;
      }
+     .participation:hover ~ #participationP, .radical:hover ~ #radicalP , .unhinged:hover ~ #unhingedP, .civic:hover ~ #civicP, .current{
+        /* display: inline; */
+        height:auto;
+    }
     
 }
