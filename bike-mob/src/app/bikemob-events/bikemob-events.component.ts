@@ -22,7 +22,7 @@ export class BikemobEventsComponent implements OnInit {
   googleCalSetUp(){
     this.calendarEl = document.getElementById('calendar');
     let calendar = new Calendar(this.calendarEl, {
-      initialView: 'dayGridMonth',
+      initialView: 'listYear',
       customButtons: {
         custom: {
           text: 'Calendar',
@@ -31,9 +31,9 @@ export class BikemobEventsComponent implements OnInit {
           }
         }
       },
-      plugins: [ googleCalendarPlugin],
+      plugins: [ googleCalendarPlugin, listPlugin],
       headerToolbar: {
-        left: 'dayGridMonth,timeGridWeek,custom',
+        left: 'dayGridMonth,listYear,custom',
         center: 'title',
         right: 'prev,next'
       }, 
@@ -57,10 +57,10 @@ export class BikemobEventsComponent implements OnInit {
   googleCalMobileSetup(){
     this.calendarEl = document.getElementById('calendar');
     let calendar = new Calendar(this.calendarEl, {
-      initialView: 'dayGridMonth',
+      initialView: 'listYear',
       plugins: [ googleCalendarPlugin, listPlugin  ],
       headerToolbar: {
-        left: 'dayGridMonth,listMonth',
+        left: 'dayGridMonth,listYear',
         center: 'title',
         right: 'prev,next'
       }, 

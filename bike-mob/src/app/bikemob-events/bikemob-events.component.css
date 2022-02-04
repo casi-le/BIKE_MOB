@@ -3,17 +3,16 @@ full-calendar{
     max-width: 1000px;
 }
 .calendar{
-    margin: 1em 2em 1em 2em;
     padding:0;
 }
 .fullWidth{
     width:100vw;
 }
-@media only screen and (min-width: 1200px){
-    .calendar{
-    margin: 1em 2em 1em -10em;
-    }
+.yearlong{
+    max-width:35vw;
+    max-height:100vh;
 }
+
 @media only screen and (max-width: 800px) {
     full-calendar{
         min-width:200px;
@@ -21,5 +20,9 @@ full-calendar{
     .calendar{
         margin: .5em 1em .5em 1em;
         padding: 0;
+        flex-wrap: wrap !important;
+    }
+    .yearlong{
+        max-width:80vw;
     }
 }
