@@ -25,8 +25,12 @@
 
 }
 .img{
-    width:100%;
+    width:50%;
     height:auto;
     background-color: #000;
 }
 i,a{color:white;}
+.imageDiv{
+    background-color: #000;
+    text-align: center;
+}

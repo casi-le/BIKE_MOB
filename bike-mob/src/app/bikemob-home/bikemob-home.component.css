@@ -5,6 +5,16 @@
     /* color:white; */
     padding: 3em 15em 1em 15em;
 }
+.bw_background{
+    background-image: url('/assets/images/bw_mob_background.png');
+    min-height: 300px;
+    background-size: 100%;
+}
+.bw_background>h1{
+    -webkit-text-stroke: 0.25px #ff91c8;
+    max-width: 25%;
+    padding-left: 5%;
+}
 :host{
     display:flex;
     width:100%;
@@ -38,7 +48,9 @@ li:before{
 }
 /* image +intro background & settings */
 .backgroundGrey{
-    background-color:#c4c4c4;
+    /* background-color:#c4c4c4; */
+    background-color: #000;
+    color: #fff;
 }
 .introImg{
     display:flex;
@@ -62,21 +74,25 @@ li:before{
     overflow:hidden;
 }
 .backgroundLights{
+    /* padding: 0; */
     color: #fff;
+    background-image: url('/assets/images/background_pink.png');
+    background-position: top center;
+    background-attachment: fixed;
 }
-.backgroundLights>h1{
-    color:#000;
-}
+
 .individualHeader{
     display: inline-block;
     cursor:pointer;
     width: 25%;
     min-height:3.5em;
+    text-align: center;
 }
 .backgroundText{
     background: rgb(0,0,0);
     border-radius: 15px 50px 30px;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(88,88,88,1) 65%, rgba(134,134,134,1) 100%);
+    margin-bottom: 10%;
 }
 .answerP{
     padding: 0 10% 0 10%;
@@ -90,7 +106,8 @@ li:before{
     text-align: center;
 }
 .participation:hover>h5, .radical:hover>h5, .unhinged:hover>h5, .civic:hover>h5, .currentHeader>h5{
-    color:#fff;
+    /* color:#fff; */
+    color: #fff;
 }
  .participation:hover ~ #participationP, .radical:hover ~ #radicalP , .unhinged:hover ~ #unhingedP, .civic:hover ~ #civicP, .current{
     /* display: inline; */
@@ -98,16 +115,31 @@ li:before{
     transform: translateX(0);
     visibility: visible;
     position: static;
-    height: 380px;
+    min-height: 380px;
 }
 .answerRow{
     height:5vh;
+}
+/* reduced screen width only */
+@media only screen and (max-width: 1000px)and (min-width: 800px){
+    .participation:hover ~ #participationP, .radical:hover ~ #radicalP , .unhinged:hover ~ #unhingedP, .civic:hover ~ #civicP, .current{
+        /* display: inline; */
+        height:auto;
+    }
+    .individualHeader{
+        width: 100%;
+        display: block;
+    }
 }
 /* mobile settings */
 @media only screen and (max-width: 800px) {
     .home{
         padding: 1em;
     }   
+    .bw_background{
+        min-height:50px;
+        background-size:auto 100%;
+    }
     .introImg{
         display: inline-block;
     }
