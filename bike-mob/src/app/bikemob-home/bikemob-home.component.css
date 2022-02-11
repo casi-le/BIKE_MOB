@@ -1,3 +1,11 @@
+.overall{
+    color: #fff;
+    background-color:#000;
+    background-image: url('/assets/images/background_pink.png');
+    background-position: top center;
+    background-attachment: fixed;
+    background-size:100% auto;
+}
 .home{
     width:100%;
     flex: 1 1 auto;
@@ -11,7 +19,6 @@
     background-size: 100%;
 }
 .bw_background>h1{
-    -webkit-text-stroke: 0.25px #ff91c8;
     max-width: 25%;
     padding-left: 5%;
 }
@@ -27,6 +34,9 @@
     z-index: 100;
 }
 .glitter{color: #FF69B4;}
+.clear{
+    -webkit-text-stroke: 0.25px #ff91c8;
+}
 p.glitter{    -webkit-text-stroke: 0.25px #FF0099;}
 h3 span{
     font-size: larger;
@@ -45,6 +55,14 @@ h4{
 li:before{
     content: "";
 
+}
+/* events section */
+.currentEvent{
+    width:75%;
+    margin-bottom:10em;
+}
+.events{
+    text-align: center;
 }
 /* image +intro background & settings */
 .backgroundGrey{
@@ -71,27 +89,22 @@ li:before{
     position:absolute;
 }
 .row{
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 .backgroundLights{
     /* padding: 0; */
-    color: #fff;
-    background-image: url('/assets/images/background_pink.png');
-    background-position: top center;
-    background-attachment: fixed;
+    min-height:300px;
 }
-
 .individualHeader{
     display: inline-block;
     cursor:pointer;
-    width: 25%;
     min-height:3.5em;
     text-align: center;
 }
 .backgroundText{
-    background: rgb(0,0,0);
+    /* background: rgb(0,0,0); */
     border-radius: 15px 50px 30px;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(88,88,88,1) 65%, rgba(134,134,134,1) 100%);
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(88,88,88,1) 65%, rgba(134,134,134,1) 100%); */
     margin-bottom: 10%;
 }
 .answerP{
@@ -102,10 +115,10 @@ li:before{
 }
 .divPrinc{
     width: 100%;
-    padding: 10px 10px 0 15px;
+    padding: 10px 10px 10px 15px;
     text-align: center;
 }
-.participation:hover>h5, .radical:hover>h5, .unhinged:hover>h5, .civic:hover>h5, .currentHeader>h5{
+.participation:hover>h5, .radical:hover>h5, .unhinged:hover>h5, .civic:hover>h5, .currentHeader h5{
     /* color:#fff; */
     color: #fff;
 }
@@ -119,6 +132,36 @@ li:before{
 }
 .answerRow{
     height:5vh;
+}
+.pinkBtn{
+    background: 
+    linear-gradient(to right bottom, #FF0099, #db5eaa) 
+    border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  border: solid .35em transparent;
+  padding: .5em;
+  margin: .5em;
+  
+}
+.pinkBtn::before{
+    position: absolute;
+    inset: -.5em;
+    border: inherit;
+    border-radius: 9em;
+    background: inherit;
+    background-clip: border-box;
+    content: '';
+    --full: linear-gradient(red 0 0);
+    -webkit-mask: var(--full) padding-box, var(--full);
+    -webkit-mask-composite: xor;
+    mask: var(--full) padding-box exclude, var(--full);
+}
+.currentHeader .pinkBtn{
+    background: 
+    linear-gradient(to right bottom, #FF0099, #db5eaa) 
+    border-box;
 }
 /* reduced screen width only */
 @media only screen and (max-width: 1000px)and (min-width: 800px){
@@ -146,6 +189,12 @@ li:before{
     .introImgSub{
         padding-bottom:0;
     }
+    /* events mobile */
+    .currentEvent{
+        width:100%;
+        margin-bottom:5em;
+    }
+    /* core principles mobile */
     .row{
         display:inline-block;
     }

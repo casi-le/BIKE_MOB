@@ -12,8 +12,8 @@ export class BikemobHomeComponent implements OnInit {
   hoverP:any;
 
   ngOnInit(): void {
-    this.hoverEl = document.getElementById('unhingedH');
-    this.hoverP=document.getElementById('unhingedP')
+    this.hoverEl = document.getElementById('radicalH');
+    this.hoverP=document.getElementById('radicalP')
   }
   applyHover(el: any, elP: any){
     if(this.hoverEl){
