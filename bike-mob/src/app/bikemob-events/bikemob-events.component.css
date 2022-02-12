@@ -1,12 +1,23 @@
+.eventsOverall{
+    color:#fff;
+    background-color: #000;
+    padding-bottom:5em;
+}
 full-calendar{
-    min-width:800px;
+    min-width:500px;
     max-width: 1000px;
+    background-color: #000;
+    margin-right:2.5em;
+}
+:host{
+    width: 100%;
 }
 .calendar{
     padding:0;
 }
 .fullWidth{
     width:100vw;
+
 }
 .yearlong{
     max-width:35vw;
@@ -16,6 +27,7 @@ full-calendar{
 @media only screen and (max-width: 800px) {
     full-calendar{
         min-width:200px;
+        min-height:500px;
     }
     .calendar{
         margin: .5em 1em .5em 1em;

@@ -23,6 +23,7 @@ export class BikemobEventsComponent implements OnInit {
     this.calendarEl = document.getElementById('calendar');
     let calendar = new Calendar(this.calendarEl, {
       initialView: 'listYear',
+      eventBackgroundColor:'#aaa9ad',
       customButtons: {
         custom: {
           text: 'Calendar',
@@ -42,7 +43,7 @@ export class BikemobEventsComponent implements OnInit {
       events: {
         googleCalendarId: 'focobikemob@gmail.com'
       },
-      eventColor: '#FF69B4',
+      eventColor: '#000',
       eventDisplay: 'block',
       eventClick: function(info){
         info.jsEvent.preventDefault(); // don't let the browser navigate 
@@ -69,7 +70,7 @@ export class BikemobEventsComponent implements OnInit {
       events: {
         googleCalendarId: 'focobikemob@gmail.com'
       },
-      eventColor: '#FF69B4',
+      eventColor: '#000',
       eventDisplay: 'block',
       eventClick: function(info){
         info.jsEvent.preventDefault(); // don't let the browser navigate 

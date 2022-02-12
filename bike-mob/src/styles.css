@@ -22,6 +22,27 @@ html{
   border-color:white !important;
   background-image: none;
 }
-a:hover{
-  color: black !important;
+a:hover, a:focus{
+  color: #fff;
+  -webkit-text-stroke: 0.55px #000;
+  text-decoration: none;
+}
+/* full calendar settings */
+.fc-button{
+  background-color: #FF69B4!important;
+  border-color: #000!important;
+}
+tr.fc-list-day>th, .fc-list-day-cushion{
+  background-color:#000!important;
+  color:white !important;
+  border:0 !important;
+}
+.fc-list-day-cushion{
+  background-color: hsla(0,0%,5%,.3) !important;
+}
+.fc-list-event:hover td{
+  background-color: #FF69B4 !important;
+}
+.fc-list-event:hover td a:hover{
+  -webkit-text-stroke: 0.55px #fff !important;
 }

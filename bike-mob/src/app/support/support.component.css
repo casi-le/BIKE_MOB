@@ -1,5 +1,7 @@
 .supportInfo{
     padding: 1em 15em 1em 15em;
+    background-color: #000;
+    color:#fff;
 }
 .socialMed{
     margin-left: auto;
@@ -10,8 +12,12 @@
 .socialMed >a{
     margin-right: 1em;
 }
-li::marker{
-    color: #FF69B4;
+.sponsorsImg img{
+    max-width: 25%;
+    margin: 1em;
+}
+i{
+    color:#fff;
 }
 /* mobile settings */
 @media only screen and (max-width: 800px) {
@@ -23,5 +29,11 @@ li::marker{
     }  
     .fa-4x{
         font-size: 2.5em;
+    }
+    .sponsorsImg{
+        text-align: center;
+    }
+    .sponsorsImg img{
+        max-width: 75%;
     }
 }

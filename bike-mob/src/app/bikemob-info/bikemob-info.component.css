@@ -1,5 +1,6 @@
-a:hover{
-    color: #FF69B4;
+.infoOverall{
+    color:#fff;
+    background-color: #000;
 }
 .routeAdjust{
     top: -300px;
@@ -11,6 +12,9 @@ a:hover{
 li{
     border:none;
 }
+.list-group-item{
+    background-color: #000;
+}
 h5 i{
     color: #FF69B4;
 }
@@ -18,7 +22,7 @@ h6{
     color:#FF69B4;
 }
 li h5 i{
-    color:black;
+    color:#fff;
 }
 .conduct{
     color: #FF69B4;

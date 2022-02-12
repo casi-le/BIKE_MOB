@@ -11,11 +11,10 @@
             <!-- <img src="https://drive.google.com/uc?export=view&id=1QO506MiXCFuVO_AASdLyXjHLw4Bcz4dd"> -->
             <img class="img" src="assets/images/disco bike.gif" alt="Gif of bike and disco ball">
             <div class="introImgSub">
-
                 <p>Yes, we coordinate bike events, but that’s not the point… </p>
                 <p>We are Fort Collins’ counterculture, disco-punk rock, artsy, responsibly-irresponsible community who happen to like bikes. </p>
                   <p class="glitter">You’ll find us at the cross-roads of activism and glitter. </p>
-                  <p>On the surface it might all just seem like a good time, but take a moment to read through our core principals and you’ll get a much better idea of what this is all about (this is where the juice is, so give us a squeeze):</p>
+                  <p>On the surface it might all just seem like a good time, but take a moment to read through our <a [routerLink]="['./']" fragment="corePrincip">core principals</a> and you’ll get a much better idea of what this is all about.:</p>
             </div>
         </div>
     </div>
@@ -24,7 +23,7 @@
       <img class="currentEvent" src="assets/images/current_event.jpg" alt="Current Bike Event Flyer">
     </div>
     <div class="home backgroundGrey">
-      <h1 class="text-center">Core Principles</h1>
+      <h1 class="text-center" id="corePrincip">Core Principles</h1>
       <div class="container backgroundText">
           <div class="row">
             <p class="text-center col-12">Select to see details.</p>

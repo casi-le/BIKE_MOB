@@ -44,6 +44,10 @@ h3 span{
 h4{
     padding-bottom:1.5em;
 }
+.overall .home a:hover, a:focus{
+    color:#fff;
+    text-decoration: none;
+}
 .img{
     width:40%;
     height: 40%;

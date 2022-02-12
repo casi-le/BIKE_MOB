@@ -1,9 +1,12 @@
 .accordion{
     padding: 1em 5em 1em 10em;
     width: 100%;
+    background-image: url('/assets/images/background_pink.png');
+    background-size:  100%;
+    background-color: #000;
 }
 :host {     
-    width: 90%;
+    width: 100%;
 }
 h2:hover button{
     color:#FF69B4;
@@ -14,9 +17,24 @@ i{
 a{
     color:#FF69B4;
 }
+.card{
+    width:75%;
+    margin-left:12.5%;
+    margin-right:12.5%;
+    background-color: #000;
+    color:#fff;
+}
+button{
+    color:#fff;
+}
 /* mobile settings */
 @media only screen and (max-width: 800px) {
     .accordion{
         padding: 0.5em;
-    }   
+    }  
+    .card{
+        width:90%;
+        margin-left:5%;
+        margin-right:5%;
+    } 
 }
