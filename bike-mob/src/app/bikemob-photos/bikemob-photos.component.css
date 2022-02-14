@@ -1,16 +1,28 @@
 .overallPhoto{
+    text-align: center;
     color:#fff;
      background: rgb(0,0,0);
      border-radius: 15px 50px 30px;
-     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(88,88,88,1) 65%, rgba(134,134,134,1) 100%);
-     margin-left:10vw;
-     margin-right:10vw;
+     /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(88,88,88,1) 65%, rgba(134,134,134,1) 100%); */
+     background-image: url('/assets/images/background_pink.png');
+
 }
 .photoDiv{
-    text-align: center;
+    margin-left:10vw;
+    margin-right:10vw;
 }
 img{
     max-width:20vw;
     margin: 0 1em .5em 1em;
 }
 .glitter{color: #FF69B4;}
+
+/* mobile settings */
+@media only screen and (max-width: 800px) {
+img{
+    max-width:80vw;
+}
+.photoDiv{
+    margin:0;
+}
+}
