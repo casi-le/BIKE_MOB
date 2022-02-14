@@ -1,1 +1,8 @@
-<p>bikemob-photos works!</p>
+<div class="overallPhoto">
+    <h2 class="glitter">Photo Gallery</h2>
+    <div class="photoDiv">
+        <span *ngFor="let image of imagesToShow">
+            <img [src]="image">
+        </span>
+    </div>
+</div>
