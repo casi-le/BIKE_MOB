@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'faqs', component: BikemobFaqComponent},
   {path: 'info', component:BikemobInfoComponent},
   {path: 'support', component:SupportComponent},
-  {path: 'photos', component:BikemobPhotosComponent},
+  {path: 'info/photos', component:BikemobPhotosComponent},
   {path : '**', component: BikemobHomeComponent},
   {path: '', component: BikemobHomeComponent}
 ];

@@ -62,14 +62,13 @@ li:before{
 }
 /* events section */
 .width75{
-    width:75%;
+    /* width:75%; */
     margin: 0 auto;
+    padding-bottom:.3em;
 }
 .currentEvent{
     padding-bottom:2em;
-}
-.events{
-    text-align: center;
+    max-width:100%;
 }
 /* image +intro background & settings */
 .backgroundGrey{
@@ -171,6 +170,18 @@ li:before{
     linear-gradient(to right bottom, #FF0099, #db5eaa) 
     border-box;
 }
+/* photo section */
+.imgPhoto{
+    width:100%;
+}
+.widthPhoto{
+    width:75%;
+    margin:0 auto;
+    padding-bottom: .3em;
+}
+.photos{
+    padding-bottom:5em;
+}
 /* reduced screen width only */
 @media only screen and (max-width: 1000px)and (min-width: 800px){
     .participation:hover ~ #participationP, .radical:hover ~ #radicalP , .unhinged:hover ~ #unhingedP, .civic:hover ~ #civicP, .current{
@@ -202,6 +213,9 @@ li:before{
         width:100%;
         padding-bottom:2em;
     }
+    .events{
+        text-align: center;
+    }
     /* core principles mobile */
     .row{
         display:inline-block;
@@ -229,5 +243,8 @@ li:before{
         /* display: inline; */
         height:auto;
     }
-    
+    /* photos section mobile */
+    .photos{
+        text-align:center;
+    }
 }
