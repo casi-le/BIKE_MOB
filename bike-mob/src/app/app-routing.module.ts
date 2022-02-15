@@ -5,6 +5,7 @@ import { BikemobFaqComponent } from './bikemob-faq/bikemob-faq.component';
 import { BikemobHomeComponent } from './bikemob-home/bikemob-home.component';
 import { BikemobInfoComponent } from './bikemob-info/bikemob-info.component';
 import { BikemobPhotosComponent } from './bikemob-photos/bikemob-photos.component';
+import { BikemobRoutesComponent } from './bikemob-routes/bikemob-routes.component';
 import { SupportComponent } from './support/support.component';
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'info', component:BikemobInfoComponent},
   {path: 'support', component:SupportComponent},
   {path: 'info/photos', component:BikemobPhotosComponent},
+  {path: 'info/routes', component:BikemobRoutesComponent},
   {path : '**', component: BikemobHomeComponent},
   {path: '', component: BikemobHomeComponent}
 ];

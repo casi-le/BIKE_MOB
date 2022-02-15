@@ -4,9 +4,9 @@
         <h4>FOCO Bike Mob What You Need To Know</h4>
         <div class="d-flex justify-content-center">
             <ul class="list-group list-group-horizontal">
-                <li class="list-group-item"><a [routerLink]="['./']" fragment="importantInfo"><h5><i class="interiorIcon fas fa-info" aria-hidden="true"></i> Code of Conduct</h5></a></li>
-                <li class="list-group-item"><a [routerLink]="['./']" fragment="rideRoutes"><h5><i class="interiorIcon fas fa-route" aria-hidden="true"></i> Ride Routes</h5></a></li>
-                <li class="list-group-item"><a [routerLink]="['./']" fragment="generalPhoto"><h5><i class="interiorIcon fas fa-images" aria-hidden="true"></i> Photos of Past Rides</h5></a></li>
+                <!-- <li class="list-group-item"><a [routerLink]="['./']" fragment="importantInfo"><h5><i class="interiorIcon fas fa-info" aria-hidden="true"></i> Code of Conduct</h5></a></li> -->
+                <li class="list-group-item"><a href="info/routes" ><h5><i class="interiorIcon fas fa-route" aria-hidden="true"></i> Ride Routes</h5></a></li>
+                <li class="list-group-item"><a href="/info/photos"><h5><i class="interiorIcon fas fa-images" aria-hidden="true"></i> Photos of Past Rides</h5></a></li>
             </ul>
         </div>
         <p>We are Fort Collins' counterculture, disco-punk rock, artsy, responsibly-irresponsible community who happens to like bikes. You'll find us at the cross-roads of activism and glitter. And we're here to party. Join us for any of our annual group bicycle ride events and check the socials for up to date information. All events require lights, costumes and end with a dance party. <strong>Beep beep, toot toot!</strong></p>
@@ -28,12 +28,6 @@
         <p>&nbsp;</p>
     </div>
     <div class="riderInfo">
-        <h5 id="rideRoutes"><i class="interiorIcon fas fa-route" aria-hidden="true"></i> Ride Route:</h5>
-        <p>See our current route for the next Bike Mob.</p>
-        <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1TFg6uYJmrj6CLbFejgiHIsZRJG56AzKZ" width="640" height="480"></iframe>
-        <p>&nbsp;</p>
-    
-        <h5 id="generalPhoto"><i class="interiorIcon fas fa-images" aria-hidden="true"></i> Photos of Past Rides</h5>
-        <app-gallery></app-gallery>
+        
     </div>
 </div>

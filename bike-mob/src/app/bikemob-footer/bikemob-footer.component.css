@@ -6,7 +6,7 @@
   margin-bottom:1em;
 }
 h3, .col-sm{
-  color:#FF69B4;
+  color:#FF0099;
   margin-left:.5em;
 }
 .secondary{
@@ -59,10 +59,12 @@ input[type="submit"] {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #FF69B4;
+  background: 
+    linear-gradient(to right bottom, #FF0099, #db5eaa) 
+    border-box;
   color: #fff;
-  border: 2px solid #fff;
-  border-radius: 50px;
+  border-color: #fff;
+  border-radius: 5em;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 input[type="email"] {

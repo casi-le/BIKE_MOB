@@ -1,0 +1,18 @@
+.overallRoute{
+    max-width: 75%;
+    color:#fff;
+    margin: 0 auto;
+}
+:host{
+    width: 100%;
+}
+/* mobile settings */
+@media only screen and (max-width: 800px) {
+    iframe{
+        width:85vw;
+    }
+    .overallRoute{
+        max-width: fit-content;
+        padding:1.5em;
+    }
+}

@@ -34,6 +34,9 @@ i,a{color:white;}
     background-color: #000;
     text-align: center;
 }
+.dropdown-menu{
+    background-color:#000;
+}
 @media only screen and (max-width: 800px) {
     .img{
         width:100%;

@@ -13,11 +13,14 @@
     margin-right: 1em;
 }
 .sponsorsImg img{
-    max-width: 25%;
+    height: 20vh;
     margin: 1em;
 }
 i{
     color:#fff;
+}
+.mobb{
+    background-color: #fff;
 }
 /* mobile settings */
 @media only screen and (max-width: 800px) {
@@ -34,6 +37,7 @@ i{
         text-align: center;
     }
     .sponsorsImg img{
-        max-width: 75%;
+        width: 75%;
+        height: auto;
     }
 }
