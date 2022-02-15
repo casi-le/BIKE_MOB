@@ -55,7 +55,9 @@ tr.fc-list-day>th, .fc-list-day-cushion{
 .btn-info>a{
   color:#fff;
   font-size:x-large;
-  font-family: cursive;
+}
+.btn-info>a, .pinkBtn{
+  font-family:'Comic Sans';
 }
 .btn-info:hover{
   background-color: #fff;

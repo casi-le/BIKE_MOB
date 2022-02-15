@@ -150,7 +150,6 @@ li:before{
   border: solid .35em transparent;
   padding: .5em;
   margin: .5em;
-  font-family:cursive;
 }
 .pinkBtn::before{
     position: absolute;
