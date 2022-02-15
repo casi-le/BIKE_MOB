@@ -63,6 +63,7 @@ li:before{
 /* events section */
 .width75{
     /* width:75%; */
+    max-width:800px;
     margin: 0 auto;
     padding-bottom:.3em;
 }
