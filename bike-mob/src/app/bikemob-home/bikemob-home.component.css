@@ -61,9 +61,12 @@ li:before{
 
 }
 /* events section */
-.currentEvent{
+.width75{
     width:75%;
-    margin-bottom:10em;
+    margin: 0 auto;
+}
+.currentEvent{
+    padding-bottom:2em;
 }
 .events{
     text-align: center;
@@ -98,6 +101,7 @@ li:before{
 .backgroundLights{
     /* padding: 0; */
     min-height:300px;
+    padding-bottom:5em;
 }
 .individualHeader{
     display: inline-block;
@@ -147,7 +151,7 @@ li:before{
   border: solid .35em transparent;
   padding: .5em;
   margin: .5em;
-  
+  font-family:cursive;
 }
 .pinkBtn::before{
     position: absolute;
@@ -196,7 +200,7 @@ li:before{
     /* events mobile */
     .currentEvent{
         width:100%;
-        margin-bottom:5em;
+        padding-bottom:2em;
     }
     /* core principles mobile */
     .row{

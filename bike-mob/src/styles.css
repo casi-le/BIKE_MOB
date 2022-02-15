@@ -46,3 +46,20 @@ tr.fc-list-day>th, .fc-list-day-cushion{
 .fc-list-event:hover td a:hover{
   -webkit-text-stroke: 0.55px #fff !important;
 }
+.btn-info{
+  background-color: #FF0099;
+  border-color: #ff0099;
+}
+.btn-info>a{
+  color:#fff;
+  font-size:x-large;
+  font-family: cursive;
+}
+.btn-info:hover{
+  background-color: #fff;
+  border-color:#fff;
+}
+.btn-info:hover>a{
+  color: #f09 !important;
+  -webkit-text-stroke: 0 ;
+}
