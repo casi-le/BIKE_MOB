@@ -18,9 +18,7 @@ export class BikemobPhotosComponent implements OnInit {
 
   async ngAfterViewInit(): Promise<void> {
     //google api:
-    //AIzaSyDg6ZrE1ovEs_w8Lo7_Y7zYON5ueCxLWBs
-    var auth: AuthService = new AuthService();
-    await auth.login();
+    //AIzaSyDg6ZrE1ovEs_w8Lo7_Y7zYON5ueCxLWBs 
     this.listStorage();
     
   }

@@ -20,6 +20,11 @@ import { SupportComponent } from './support/support.component';
 import { BikemobPhotosComponent } from './bikemob-photos/bikemob-photos.component';
 import { BikemobRoutesComponent } from './bikemob-routes/bikemob-routes.component';
 
+//firebase
+import {AuthService} from './authService';
+var auth: AuthService = new AuthService();
+auth.login();
+
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
   googleCalendarPlugin,

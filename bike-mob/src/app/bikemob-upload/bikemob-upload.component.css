@@ -1,0 +1,8 @@
+.overallUpload{
+    color:#fff;
+    width:75%;
+    margin: 0 auto;
+}
+:host{
+    width:100%;
+}
